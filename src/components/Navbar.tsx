@@ -32,8 +32,7 @@ interface NavbarProps {
 const navLinks = [
   { label: 'Features', href: '/features' },
   { label: 'Pricing', href: '/pricing' },
-  { label: 'Docs', href: '#' },
-  { label: 'Blog', href: '#' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export const Navbar: React.FC<NavbarProps> = ({ onToggleTheme, mode }) => {

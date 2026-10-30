@@ -19,28 +19,26 @@ import { Link as RouterLink } from 'react-router-dom';
 const productLinks = [
   { label: 'Features', href: '/features' },
   { label: 'Pricing', href: '/pricing' },
-  { label: 'Changelog', href: '#' },
-  { label: 'Roadmap', href: '#' },
+  { label: 'Contact', href: '/contact' },
+  { label: 'Sign Up', href: '/register' },
 ];
 
 const companyLinks = [
-  { label: 'About', href: '#' },
-  { label: 'Blog', href: '#' },
-  { label: 'Careers', href: '#' },
-  { label: 'Press', href: '#' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Careers', href: '/careers' },
+  { label: 'Contact Us', href: '/contact' },
 ];
 
 const supportLinks = [
-  { label: 'Docs', href: '#' },
-  { label: 'API Reference', href: '#' },
-  { label: 'Status', href: '#' },
-  { label: 'Contact', href: '#' },
+  { label: 'Help Center', href: '/help' },
+  { label: 'Contact Support', href: '/contact' },
+  { label: 'System Status', href: '/status' },
 ];
 
 const socialLinks = [
-  { label: 'Twitter / X', icon: <TwitterIcon fontSize="small" />, href: '#' },
-  { label: 'LinkedIn', icon: <LinkedInIcon fontSize="small" />, href: '#' },
-  { label: 'GitHub', icon: <GitHubIcon fontSize="small" />, href: '#' },
+  { label: 'Twitter / X', icon: <TwitterIcon fontSize="small" />, href: 'https://twitter.com' },
+  { label: 'LinkedIn', icon: <LinkedInIcon fontSize="small" />, href: 'https://linkedin.com' },
+  { label: 'GitHub', icon: <GitHubIcon fontSize="small" />, href: 'https://github.com' },
 ];
 
 const LinkColumn: React.FC<{ title: string; links: { label: string; href: string }[] }> = ({
@@ -186,7 +184,7 @@ export const Footer: React.FC = () => {
           <Box sx={{ display: 'flex', gap: 3 }}>
             <Link
               component={RouterLink}
-              to="#"
+              to="/contact"
               underline="none"
               sx={{
                 color: theme.palette.text.secondary,
@@ -199,7 +197,7 @@ export const Footer: React.FC = () => {
             </Link>
             <Link
               component={RouterLink}
-              to="#"
+              to="/contact"
               underline="none"
               sx={{
                 color: theme.palette.text.secondary,
