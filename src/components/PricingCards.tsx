@@ -317,18 +317,18 @@ export const PricingCards: React.FC<PricingCardsProps> = ({ showHeader = true })
                       fontWeight: 700,
                       ...(plan.highlight
                         ? {
-                            background: `linear-gradient(135deg, ${plan.color} 0%, #6366F1 100%)`,
-                            boxShadow: `0 4px 14px ${alpha(plan.color, 0.4)}`,
-                            '&:hover': { background: `linear-gradient(135deg, #4338CA 0%, ${plan.color} 100%)` },
-                          }
+                          background: `linear-gradient(135deg, ${plan.color} 0%, #6366F1 100%)`,
+                          boxShadow: `0 4px 14px ${alpha(plan.color, 0.4)}`,
+                          '&:hover': { background: `linear-gradient(135deg, #4338CA 0%, ${plan.color} 100%)` },
+                        }
                         : {
-                            borderColor: alpha(plan.color, 0.5),
-                            color: plan.color,
-                            '&:hover': {
-                              borderColor: plan.color,
-                              backgroundColor: alpha(plan.color, 0.06),
-                            },
-                          }),
+                          borderColor: alpha(plan.color, 0.5),
+                          color: plan.color,
+                          '&:hover': {
+                            borderColor: plan.color,
+                            backgroundColor: alpha(plan.color, 0.06),
+                          },
+                        }),
                     }}
                   >
                     {plan.cta}

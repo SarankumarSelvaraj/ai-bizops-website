@@ -394,9 +394,76 @@ export const HeroSection: React.FC = () => {
               width: '100%',
               maxWidth: { xs: 480, md: '100%' },
               mx: 'auto',
+              position: 'relative',
             }}
           >
-            <DashboardMockup />
+            <Box
+              component="img"
+              src="/mockup-placeholder.svg"
+              alt="BizOps AI Dashboard"
+              sx={{
+                width: '100%',
+                height: 'auto',
+                borderRadius: 3,
+                boxShadow: isDark
+                  ? '0 25px 50px -12px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.05)'
+                  : '0 25px 50px -12px rgba(79,70,229,0.25), 0 0 0 1px rgba(0,0,0,0.05)',
+                animation: 'float 6s ease-in-out infinite',
+                '@keyframes float': {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              }}
+            />
+            {/* Floating badges */}
+            <Box
+              sx={{
+                position: 'absolute',
+                top: '10%',
+                right: '-5%',
+                backgroundColor: theme.palette.background.paper,
+                borderRadius: 2,
+                p: 1.5,
+                boxShadow: isDark
+                  ? '0 8px 24px -4px rgba(0,0,0,0.5)'
+                  : '0 8px 24px -4px rgba(79,70,229,0.15)',
+                border: `1px solid ${theme.palette.divider}`,
+                animation: 'pulse 3s ease-in-out infinite',
+                '@keyframes pulse': {
+                  '0%, 100%': { transform: 'scale(1)' },
+                  '50%': { transform: 'scale(1.05)' },
+                },
+              }}
+            >
+              <Typography sx={{ fontSize: '0.75rem', fontWeight: 600, color: theme.palette.text.secondary, mb: 0.5 }}>
+                Revenue Growth
+              </Typography>
+              <Typography sx={{ fontSize: '1.5rem', fontWeight: 800, color: '#10B981', lineHeight: 1 }}>
+                +28%
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                position: 'absolute',
+                bottom: '10%',
+                left: '-5%',
+                backgroundColor: theme.palette.background.paper,
+                borderRadius: 2,
+                p: 1.5,
+                boxShadow: isDark
+                  ? '0 8px 24px -4px rgba(0,0,0,0.5)'
+                  : '0 8px 24px -4px rgba(79,70,229,0.15)',
+                border: `1px solid ${theme.palette.divider}`,
+                animation: 'pulse 3s ease-in-out infinite 1.5s',
+              }}
+            >
+              <Typography sx={{ fontSize: '0.75rem', fontWeight: 600, color: theme.palette.text.secondary, mb: 0.5 }}>
+                AI Tasks Created
+              </Typography>
+              <Typography sx={{ fontSize: '1.5rem', fontWeight: 800, color: '#4F46E5', lineHeight: 1 }}>
+                1,247
+              </Typography>
+            </Box>
           </Box>
         </Box>
       </Container>

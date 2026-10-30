@@ -184,7 +184,7 @@ export const Footer: React.FC = () => {
           <Box sx={{ display: 'flex', gap: 3 }}>
             <Link
               component={RouterLink}
-              to="/contact"
+              to="/privacy"
               underline="none"
               sx={{
                 color: theme.palette.text.secondary,
@@ -197,7 +197,7 @@ export const Footer: React.FC = () => {
             </Link>
             <Link
               component={RouterLink}
-              to="/contact"
+              to="/terms"
               underline="none"
               sx={{
                 color: theme.palette.text.secondary,

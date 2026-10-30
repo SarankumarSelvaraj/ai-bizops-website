@@ -14,6 +14,8 @@ import { AboutPage } from './pages/AboutPage';
 import { CareersPage } from './pages/CareersPage';
 import { HelpCenterPage } from './pages/HelpCenterPage';
 import { StatusPage } from './pages/StatusPage';
+import { TermsPage } from './pages/TermsPage';
+import { PrivacyPage } from './pages/PrivacyPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
 const ScrollToTop: React.FC = () => {
@@ -60,6 +62,8 @@ const AppContent: React.FC<{ mode: 'light' | 'dark'; onToggleTheme: () => void }
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/help" element={<HelpCenterPage />} />
           <Route path="/status" element={<StatusPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           {/* Catch-all route for 404 */}
